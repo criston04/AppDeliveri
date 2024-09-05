@@ -1,0 +1,41 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+
+
+
+.dinero{
+    padding: v.$separacion;
+
+    &__heading{
+        text-align: center;
+        color: v.$secundario;
+    }
+
+    &__grid{
+        @include m.tablet { 
+            display: grid;
+            @include m.grid(2, v.$separacion);
+        }
+    }
+
+    &__img{
+        border-radius: 1rem;
+    }
+
+    
+    &__parrafo{
+        line-height: 1.3;
+        color: v.$secundario;
+    }
+    &__boton{
+        @include m.boton(v.$primario, v.$blanco);
+        @include m.tablet { 
+            display:inline;
+        }
+    }
+
+    
+
+    
+}
