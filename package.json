@@ -4,7 +4,7 @@
   "description": "Delivery App, BEM, SASS, Gulp, CSS Grid",
   "main": "index.js",
   "scripts": {
-    "dev": "gulp"
+    "dev": "node init && gulp"
   },
   "author": "Juan Carlos Isordia Betancourt",
   "license": "ISC",
